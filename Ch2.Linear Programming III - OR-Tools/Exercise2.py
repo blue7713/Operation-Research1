@@ -22,7 +22,7 @@ def Exercise2():
 
     d = [100, 250, 190, 140, 220, 110]
     for i in range(2, 6):
-        solver.Add(x[i] - I[i] + I[i + 1] == d[i - 1])
+        solver.Add(x[i] - I[i] + I[i - 1] == d[i - 1])
 
     solver.Add(I[5] + x[6] == 110)
 

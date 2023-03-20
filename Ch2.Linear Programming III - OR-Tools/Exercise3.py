@@ -16,10 +16,10 @@ def Exercise3():
           [0, 0, 0, 1, 1, 0],
           [0, 0, 0, 0, 1, 1]
           ]
-    b = [4, 8, 10, 7, 12, 5]
+    b = [4, 8, 10, 7, 12, 4]
 
     x = {}
-    for i in range(1, 7):
+    for i in range(1, num_vars + 1):
         x[i] = solver.NumVar(0, solver.infinity(), 'x[%i]' %i)
 
     print('Number of variables =', solver.NumVariables())   
